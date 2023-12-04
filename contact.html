@@ -20,42 +20,36 @@
             </div>
         </div>
     </header>
-    <main>
-        <section id="image-section">
-            <div id="image-div">
-                <div>your partner in socials.</div>
-                <input type="text" class="icon" value placeholder="Search">
-            </div>
-        </section>
-        <section id="about-section">
-            <p>Mélange, a Hospitality & Food marketing agency. We leverage our consumer insights and industry expertise to help define your brand and build your business.</p>
-            <div id="about-container">
-                <div class="image-description">
-                    <img src="Restaurant.jpg">
-                    <h3>Lifestyle</h3>
-                    <p>Behind every transaction, whether it be through a digital effort or a reservation, is a person. Our job is to work with you and immerse ourselves in your restaurant, brand, clients, goals and physical spaces to understand what your restaurant needs to thrive.</p>
+    <main id="contact-form">
+        <h2>We'd love to hear from you.</h2>
+        <p>To request a quote or a meeting, just fill out the form and we will get in touch with you shortly.</p>
+        <form>
+            <div id="name-for-contact-form">
+                <div>
+                    <label for="fname">First name*</label><br>
+                    <input type="text" id="fname" name="fname"><br>
                 </div>
-                <div class="image-description">
-                    <img src="Restaurant.jpg">
-                    <h3>Hospitality</h3>
-                    <p>Behind every transaction, whether it be through a digital effort or a reservation, is a person. Our job is to work with you and immerse ourselves in your restaurant, brand, clients, goals and physical spaces to understand what your restaurant needs to thrive.</p>
-                </div>
-                <div class="image-description">
-                    <img src="Restaurant.jpg">
-                    <h3>Beauty</h3>
-                    <p>Behind every transaction, whether it be through a digital effort or a reservation, is a person. Our job is to work with you and immerse ourselves in your restaurant, brand, clients, goals and physical spaces to understand what your restaurant needs to thrive.</p>
+                <div>
+                    <label for="lname">Last name*</label><br>
+                    <input type="text" id="lname" name="lname">
                 </div>
             </div>
-        </section>
-        <section id="clients-section">
-            <h1>Our Clients</h1>
-            <div id="clients-logo-container">
-                <img src="./icons/pastrami-queen.svg" class="client-logo">
-                <img src="./icons/2.svg" class="client-logo">
-                <img src="./icons/3.svg" class="client-logo">
-                <img src="./icons/4.svg" class="client-logo">
+            <div id="contacts-for-contact-form">
+                <div>
+                    <label for="email">Email*</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+                <div>
+                    <label for="tel">Phone Number</label><br>
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                </div>
+                <div>
+                    <label for="message">Message* (Please note what services you're interested in)</label><br>
+                    <textarea type="text" id="message" name="message"></textarea>
+                </div>
             </div>
-        </section>
+            <input type="submit" value="Let's connect" id="lets-connect-btn">
+        </form>
     </main>
     <footer id="footer">
         <div id="socials">
