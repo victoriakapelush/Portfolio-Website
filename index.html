@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <script src="./src/index.js" defer></script>
     <title>MK</title>
 </head>
 <body>
@@ -13,7 +14,6 @@
         </a>
         <div id="header-links-container">
             <a href="./about.html" id="about-link">ABOUT</a>
-            <a href="./services.html" id="services-link">SERVICES</a>
             <a href="./portfolio.html" id="portfolio-link">PORTFOLIO</a>
             <div id="contact-me-box">
                 <a href="./contact.html" id="contact-me-link">CONTACT</a>
@@ -28,46 +28,143 @@
             </div>
         </section>
         <section id="about-section">
-            <h1>Unleash the power of strategic marketing, driving your brand to new heights</h1>
-            <div id="about-container">
-                <div class="image-description">
-                    <img src="./icons/lifestyle.png">
-                    <div>
-                        <h3>Lifestyle</h3>
-                        <p>Embrace the vibrant rhythm of the marketing lifestyle - where creativity meets strategy in every heartbeat.</p>
+            <div class="about-image-container flex-row">
+                <div>
+                    <div class="about-single-image">
+                        <img src="./images/hospitality.png" alt="Hospitality">
                     </div>
+                    <div class="about-image-description">Hospitality</div>
                 </div>
-                <div class="image-description">
-                    <img src="./icons/hospitality.png">
-                    <div>
-                        <h3>Hospitality</h3>
-                        <p>Elevate guest experiences with our unparalleled marketing expertise tailored for the hospitality industry.</p>
+                <div>
+                    <div class="about-single-image">
+                        <img src="./images/beauty.png" alt="Beauty">
                     </div>
+                    <div class="about-image-description">Beauty</div>
                 </div>
-                <div class="image-description">
-                    <img src="./icons/beauty.png">
-                    <div>
-                        <h3>Beauty</h3>
-                        <p>Transform beauty into brilliance with our strategic marketing solutions, redefining allure and elegance.</p>
+                <div>
+                    <div class="about-single-image">
+                        <img src="./images/lifestyle.png" alt="Lifestyle">
                     </div>
+                    <div class="about-image-description">Lifestyle</div>
                 </div>
+            </div>
+            <div class="about-header-div flex-column">
+                <h1>With a spark of creativity and a strong focus on results, MK Socials, your NYC-based digital marketing agency, is tranforming how brands in the Hospitality and Lifestyle indistries connect with their audience.</h1>
+                <a href="./contact.html">Contact me</a>
+            </div>
+        </section>
+        <section class="services-section flex-row">
+            <div class="services-list-container flex-column">
+                <h1>Services</h1>
+                <div class="services-description-container flex-column">
+                    <div class="divider"></div>
+                    <div class="description-item-container">
+                        <div class="flex-row description-item click">Social Media Management<a class="arrow"><div></div></a></div>
+                        <div class="hidden-description" style="display: none;">
+                            Instagram, Facebook, and TikTok
+                            <br /><br />
+                            Streamline your brand's digital presence with our comprehensive social media management services. Elevate brand visibility, nurture customer relationships, generate potent leads, and stimulate business growth through our strategic and proactive online presence. 
+                            <ul><li>Social Media Strategy</li></ul>
+                                Strategic planning for specific goals, audience targeting, content creation, and engagement. Designed for optimal social media platform utilization and business objective alignment.
+                            <ul><li>Community Management</li></ul>
+                                We're not just managing your online communities; we're becoming a part of them. It's all about building relationships, lending a helping hand, and sparking conversations that keep your followers coming back for more.
+                            <ul><li>Page Optimization</li></ul>
+                                Our approach fine-tunes crucial elements of your brand's social media profiles, including content, visuals, and settings. The result is enhanced visibility, increased engagement, and superior performance on these platforms.
+                            <ul><li>Content Creation</li></ul>
+                                Craft and curate impactful text, visuals, and videos to captivate your audience across diverse social media platforms.
+                            <ul><li>Photo & Video Shoots</li></ul>
+                                Capturing visually appealing and high-quality images and videos tailored for specific social media platforms to elevate brand storytelling, engage the audience, and create captivating content.
+                            <ul><li>Ads/Campaigns</li></ul>
+                                Strategizing, designing, and implementing targeted promotional content with the aim of reaching a wider audience, boosting brand awareness, driving conversions, and achieving specific marketing objectives on various social media platforms.
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="description-item-container">
+                        <div class="flex-row description-item click">Reputation Management<a><div class="arrow"></div></a></div>
+                        <div class="hidden-description" style="display: none;">
+                            Google and Yelp Business 
+                            <br /><br />
+                            We actively monitor, address, and positively influence the perception of your business or brand in the public eye, ensuring a positive image, building trust with customers, and safeguarding against potential crises. 
+                            <ul><li>Reviews</li></ul>
+                                Responding to reviews allows businesses to acknowledge and address feedback, build stronger relationships with customers, and showcase a commitment to exceptional customer service.
+                            <ul><li>Direct Messages & Emails</li></ul>
+                                Responding to emails promptly and professionally demonstrates attentiveness to customer inquiries, resolves issues efficiently, and fosters a positive perception of the business or brand's customer service.
+                            <ul><li>Brand Images</li></ul>
+                                Monthly refresh and update photo galleries to provide customers with the latest and most captivating visual content.
+                            <ul><li>Latest Updates</li></ul>
+                                Ensure that the brand's information, including email, phone number, holiday closures, and more, is consistently up-to-date and readily accessible to customers.
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="description-item-container">
+                        <div class="flex-row description-item click">Influencer Outreach<a><div class="arrow"></div></a></div>
+                        <div class="hidden-description" style="display: none;">
+                            Instagram and TikTok
+                            <br /><br />
+                            Strategic practice of collaborating with influential individuals in a particular niche or industry to promote a business or brand's products or services, leveraging their reach and credibility to gain exposure, trust, and potential customers. 
+                            <ul><li>Search</li></ul>
+                                Researching and identifying relevant influencers who align with the brand's target audience and values.
+                            <ul><li>Outreach</li></ul>
+                                Reaching out to influencers to propose collaboration opportunities, such as sponsored content, product reviews, or partnerships.
+                            <ul><li>Negotiating</li></ul>
+                                Negotiating terms and agreements for influencer partnerships, including compensation, content requirements, and posting schedules.
+                            <ul><li>Published Content</li></ul>
+                                Monitoring and managing influencer campaigns to ensure content quality, adherence to brand guidelines, and timely delivery. Also, tracking the performance and impact of influencer collaborations through metrics like reach, engagement, and conversions.
+                            <ul><li>Maintaining Partnerships</li></ul>
+                                Nurturing relationships with influencers for potential long-term partnerships and maintaining positive interactions to foster brand loyalty.
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="description-item-container">
+                        <div class="flex-row description-item click">User-Generated Content<a><div class="arrow"></div></a></div>
+                        <div class="hidden-description" style="display: none;">
+                            Brand Content Creation
+                            <br /><br />
+                            Reviews, photos, videos, or social media posts, that is created by users of a brand, and it can be beneficial to a business as it builds authenticity, fosters community engagement, and amplifies brand advocacy through real-life experiences and peer-to-peer recommendations.
+                            <ul><li>Content Creation</li></ul>
+                                Contribute authentic and diverse content, including reviews, photos, videos, and social media posts, showcasing genuine experiences with the brand or product. This enriches the brand's content library, fostering deeper audience connections, reflecting real-life interactions, and boosting brand credibility and engagement.
+                            <ul><li>Reviews</li></ul>
+                                Share valuable reviews based on honest opinions and personal experiences about a brand, product, or service to help potential customers make informed decisions, build trust, and influence purchasing behavior. These authentic reviews provide social proof, showcasing the brand's credibility and reliability through real-life user experiences.
+                            <ul><li>Feedback</li></ul>
+                                Offer valuable feedback to brands providing firsthand insights on product performance, customer service, and brand perception. This feedback helps brands understand customer sentiments, identify areas for improvement, and make informed decisions to enhance their offerings and overall customer experience.
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <div class="services-images-container">
+                <img src="./images/beauty.png" class="services-image-top">
+                <img src="./images/hospitality.png" class="services-image-bottom">
             </div>
         </section>
         <section id="clients-section">
             <h1>Our Clients</h1>
             <div class="divider"></div>
-            <div id="clients-logo-container">
-                <img src="./2-removebg-preview.png" class="client-logo">
-                <img src="./3-removebg-preview.png" class="client-logo" id="friedman-img">
-                <img src="./4-removebg-preview.png" class="client-logo">
-                <img src="./pastrami-queen-removebg-preview.png" class="client-logo" id="pas-queen-img">
+            <div class="carousel-container">
+                <div id="clients-logo-container" class="carousel">
+                    <img src="./images/queen.PNG" class="client-logo">
+                    <img src="./images/kossars.png" class="client-logo">
+                    <img src="./images/wooga.png" class="client-logo">
+                    <img src="./images/prince.png" class="client-logo">
+                    <img src="./images/friedman.png" class="client-logo">
+                    <img src="./images/queen.PNG" class="client-logo">
+                    <img src="./images/kossars.png" class="client-logo">
+                    <img src="./images/wooga.png" class="client-logo">
+                    <img src="./images/prince.png" class="client-logo">
+                    <img src="./images/friedman.png" class="client-logo">
+                    <img src="./images/queen.PNG" class="client-logo">
+                    <img src="./images/kossars.png" class="client-logo">
+                    <img src="./images/wooga.png" class="client-logo">
+                    <img src="./images/prince.png" class="client-logo">
+                    <img src="./images/friedman.png" class="client-logo">
+                    <img src="./images/queen.PNG" class="client-logo">
+                    <img src="./images/kossars.png" class="client-logo">
+                    <img src="./images/wooga.png" class="client-logo">
+                    <img src="./images/prince.png" class="client-logo">
+                    <img src="./images/friedman.png" class="client-logo">
+                </div>
             </div>
             <div class="divider"></div>
-        </section>
-        <section id="about-us-section">
-            <h1>About Us</h1>
-            <p> I am a dynamic and strategic professional who thrives in the ever-evolving landscape of social media marketing. With a keen understanding of Instagram's algorithms and trends, I craft compelling campaigns that resonate with target audiences. My creativity shines through visually appealing content, captivating captions, and strategic use of hashtags to enhance brand visibility and engagement. Leveraging analytics tools, I track performance metrics and fine-tune strategies for optimal results. Whether collaborating with influencers, implementing storytelling techniques, or staying abreast of the latest features, I am dedicated to maximizing brand presence and fostering meaningful connections in the digital realm. In the fast-paced world of Instagram marketing, I am both a trendsetter and a meticulous analyst, committed to delivering impactful and measurable results.</p>
-            <a href="./about.html" id="contact-me-link">Learn more</a>
         </section>
     </main>
     <footer id="footer">
@@ -75,7 +172,7 @@
             <a href="https://www.instagram.com" target="_blank" id="insta-link"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
             <a href="https://www.linkedin.com" target="_blank" id="linkedin-link"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
         </div>
-        <div id="contact-me-box">
+        <div id="contact-me-box" class="extra-padding">
             <a href="./contact.html" id="contact-me-link">CONTACT</a>
         </div>
         <div>Developed by <a href="https://victoriakapelush.com" target="_blank">Victoria Kapelush</a></div>
