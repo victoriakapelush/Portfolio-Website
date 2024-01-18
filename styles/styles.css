@@ -391,13 +391,82 @@ section {
     }
 }
 
+/* LANDING PAGE TESTIMONIALS PART */
+
+.testimonials {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.slider-container {
+    border: 1px solid black;
+    height: auto;
+    width: 700px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.testimonial-slide {
+    display: none;
+    height: 200px;
+}
+
+.author {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.slider-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
+.arrow-btn-slide {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+}
+
+.dots-arrows-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .6rem;
+}
+
+
 /* About.html separate page */
 
 #about-me-separate {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 100%;
+    height: auto;
     padding: 4rem 2rem;
     gap: 5rem;
 }
