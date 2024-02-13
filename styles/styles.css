@@ -364,6 +364,10 @@ section {
     color: #555353;
 }
 
+.divider-carousel {
+    background-color: transparent;
+}
+
 .carousel-container {
     overflow: hidden;
     width: 100%;
