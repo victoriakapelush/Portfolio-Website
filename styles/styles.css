@@ -22,6 +22,11 @@ p {
     flex-direction: column;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     margin: 0 0;
     padding: 0 1%;
@@ -36,7 +41,7 @@ body {
 
 @font-face {
     font-family: brandon-grotesque;
-    src: url("font3.otf") format("opentype");
+    src: url("../fonts/font3.otf") format("opentype");
 }
 
 a, a:visited, a:hover {
@@ -70,6 +75,10 @@ a, a:visited, a:hover {
     padding: 30px 20px;
 }
 
+#about-link, #portfolio-link, #contact-me-link {
+    font-weight: lighter;
+}
+
 #contact-me-link {
     padding: 10px 15px !important;
     border: 1px solid black;
@@ -77,6 +86,8 @@ a, a:visited, a:hover {
     padding: 15px 10px;
     letter-spacing: 2px;
     text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 #contact-me-link:hover {
@@ -91,13 +102,17 @@ main {
 
 a.current-page {
     text-decoration: underline;
-  }
+}
 
 /* landing page section one */
 
 section {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 3rem !important;
+}
+
+.search-bar {
+    height: 1.5rem !important;
 }
 
 #p {
@@ -158,7 +173,7 @@ section {
 .icon {
     background-color: var(--white);
     padding-left: 25px;
-    background: url("./icons/search.png") no-repeat right;
+    background: url("../icons/search.png") no-repeat right;
     background-size: 20px;
   }
 
@@ -312,7 +327,7 @@ section {
     position: absolute;
     top: 2rem;
     left: -10rem;
-    z-index: 1; /* Ensure the overlay image is on top */
+    z-index: 1; 
 }
 
 .arrow {
@@ -461,6 +476,7 @@ section {
     flex-direction: row;
     justify-content: center;
     gap: .6rem;
+    align-content: center;
 }
 
 
@@ -470,9 +486,10 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: auto;
+    height: 100%;
     padding: 4rem 2rem;
     gap: 5rem;
+    height: 60%;
 }
 
 #about-me-text-div {
@@ -480,26 +497,35 @@ section {
     flex-direction: column;
     justify-content: space-between;
     gap: 3rem;
-    width: 50%;
+    width: 60%;
+    height: 30rem;
 }
 
 #about-me-text-div h1, #about-me-text-div p {
-    margin: 0 0;
+    margin: 0;
     text-align: center;
 } 
 
 #about-me-text-div h1 {
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: lighter;
+    padding: 0;
 }
 
 #about-me-text-div p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 #about-me-text-div a {
     font-weight: lighter;
     font-size: .8rem;
+}
+
+#about-me-img-div, #about-me-text-div {
+    height: 100%;
 }
 
 #main-photo {
@@ -571,9 +597,21 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100%;
     margin-top: 0rem;
     margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 #contact-form p {
@@ -597,8 +635,23 @@ label {
     gap: 1rem;
 }
 
+#contacts-for-contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;    
+    width: 100%;
+    height: 100%;
+}
+
 form {
     font-size: 1rem;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
 }
 
 #name-for-contact-form div {
@@ -607,7 +660,7 @@ form {
 
 #fname, #lname {
     height: 2rem;
-    width: 30rem;
+    width: 24rem;
     margin-top: 1rem;
     border: 1px solid black;
     font-size: 1rem;
@@ -616,7 +669,7 @@ form {
 
 #email, #tel {
     height: 2rem;
-    width: 65rem;
+    width: 100%;
     margin-top: 1rem;
     border: 1px solid black;
     font-size: 1rem;
@@ -625,7 +678,7 @@ form {
 
 #message {
     height: 6rem;
-    width: 65rem;
+    width: 100%;
     margin-top: 1rem;
     border: 1px solid black;
     font-size: 1rem;
@@ -635,26 +688,19 @@ form {
 #lets-connect-btn {
     padding: 10px 15px !important;
     border: 1px solid black;
-    margin: 0 auto;
+    border-radius: 5px;
+    margin: 1rem auto;
+    cursor: pointer;
     padding: 15px 10px;
     letter-spacing: 2px;
     text-align: center;
     background-color: var(--grey);
-    margin-top: 2.3rem;
-    margin-left: 44.5%;
+    transition: background-color 0.3s ease;
 }
 
 #lets-connect-btn:hover {
     background-color: black;
     color: white;
-}
-
-input:focus {
-    outline: none;
-}
-
-#message:focus {
-    outline: none;
 }
 
 #contacts-for-contact-form {
@@ -668,6 +714,23 @@ input:focus {
     padding-bottom: 2rem;
 }
 
+input {
+    padding: 0 .3rem;
+}
+
+textarea {
+    padding: .4rem .5rem;
+}
+
+.placeholder::-webkit-input-placeholder {
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.span {
+    font-size: .8rem;
+}
+
 /* footer */
 
 #footer {
@@ -675,7 +738,8 @@ input:focus {
     width: 100%;
     bottom: 0;
     height: auto;
-    padding: 15px 10px 0px 10px;
+    padding: 15px 30px 0px 30px;
+    margin: 0 auto;
     font-size: 12px;
     text-align: center;
     display: flex;
@@ -684,6 +748,8 @@ input:focus {
     font-family: brandon-grotesque;
     padding-bottom: 1rem;
     font-weight: lighter;
+    border-top: 1px solid black;
+    width: fit-content;
 }
 
 #socials {
@@ -695,7 +761,7 @@ input:focus {
 }
 
 #socials a {
-    border: 1px dotted transparent;
+    border: 1px solid transparent;
     padding: .1rem .3rem;
 }
 
@@ -713,7 +779,7 @@ input:focus {
 }
 
 .extra-padding {
-    margin: .6rem 0; 
+    margin: .5rem 0; 
 }
 
 .dev-link {
@@ -721,7 +787,11 @@ input:focus {
     padding-top: 20px;
 }
 
-footer div:nth-of-type(3) a:hover {
+footer div:nth-of-type(3) a {
     text-decoration: underline;
+}
+
+footer div:nth-of-type(3) a:hover {
+    text-decoration: line-through;
 }
 

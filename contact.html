@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/mk.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <script src="./src/index.js" defer></script>
-    <title>MK</title>
+    <title>Contact</title>
 </head>
 <body>
     <header id="header">
@@ -27,17 +28,17 @@
         <form netlify>
             <div id="name-for-contact-form">
                 <div>
-                    <label for="fname">First name*</label><br>
+                    <label for="fname">First name</label><br>
                     <input type="text" id="fname" name="fname"><br>
                 </div>
                 <div>
-                    <label for="lname">Last name*</label><br>
+                    <label for="lname">Last name</label><br>
                     <input type="text" id="lname" name="lname">
                 </div>
             </div>
             <div id="contacts-for-contact-form">
                 <div>
-                    <label for="email">Email*</label><br>
+                    <label for="email">Email</label><br>
                     <input type="email" id="email" name="email"><br>
                 </div>
                 <div>
@@ -45,11 +46,11 @@
                     <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                 </div>
                 <div>
-                    <label for="message">Message* (Please note what services you're interested in)</label><br>
-                    <textarea type="text" id="message" name="message" placeholder="(e.g.: I have a coffee shop in Brooklyn and would love to know the price for your Instagram management service.)"></textarea>
+                    <label for="message">Message <span class="span">(Please note what services you're interested in)</span></label><br>
+                    <textarea class="placeholder" type="text" id="message" name="message" placeholder="(e.g.: I have a coffee shop in Brooklyn and would love to know the price for your Instagram management service.)"></textarea>
                 </div>
             </div>
-            <input type="submit" value="Let's connect" id="lets-connect-btn">
+            <button type="submit" id="lets-connect-btn">Let's connect</button>
         </form>
     </main>
     <footer id="footer">
