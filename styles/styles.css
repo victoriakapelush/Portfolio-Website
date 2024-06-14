@@ -155,6 +155,18 @@ section {
     to{border-right-color: transparent;}
   }
 
+.svg-main-image-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-main-image-container img {
+    height: auto;
+    width: 100%;
+}
+
 #image-section {
     height: 85vh;
     border: 1px solid black;
@@ -516,7 +528,7 @@ section {
 #about-me-text-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: 3rem;
     width: 60%;
     height: 30rem;
@@ -850,6 +862,11 @@ footer div:nth-of-type(3) a:hover {
     .about-header-div h1 {
         font-size: 1rem;
     }
+
+    .free-word {
+        font-weight: bold;
+        text-transform: capitalize;
+    }
     
     .services-image-top {
         left: -4rem; 
@@ -922,3 +939,5 @@ footer div:nth-of-type(3) a:hover {
     }
 
 }
+
+
