@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./icons/mk.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="./src/index.js" defer></script>
     <title>MK</title>
 </head>
@@ -21,20 +24,30 @@
             </div>
         </div>
     </header>
-    <main>    
-        <!--<section id="image-section">
+    <!--<main>    
+        <section id="image-section">
             <div id="image-div">
                 <div id="p">your partner in socials.</div>
                 <input type="text" class="icon search-bar" value placeholder="Search">
         </section>-->
         <section class="svg-main-image-container flex-row">
             <img src="./Untitled design.svg">
+            <div class="content-wrapper hidden-content">
+                <div class="center-me">
+                    <img src="./images/FRIEDMANS-index.jpg" id="image1" class="imageScroll hidden hiddenImage" data-index="0" />
+                    <img src="./images/WEBSITE_PHOTO-index.png" id="image2" class="imageScroll hidden hiddenImage" data-index="1"/>
+                    <img src="./images/PTH-index.jpg" id="image3" class="imageScroll hidden hiddenImage" data-index="2"/>
+                    <img src="./images/PTH EV-index.jpg" id="image4" class="imageScroll hidden hiddenImage" data-index="3"/>
+                    <img src="./images/lifestyle.png" id="image5" class="imageScroll hidden hiddenImage" data-index="4"/>
+                </div>
+            </div>
         </section>
-        <section id="about-section">
+        <div id="scroll-word">( scroll )</div>
+                <!--<section id="about-section">
             <div class="about-image-container flex-row">
                 <div>
                     <div class="about-single-image">
-                        <img src="./images/WEBSITE PHOTOS.png" alt="Hospitality">
+                        <img src="./images/WEBSITE_PHOTO.png" alt="Hospitality">
                     </div>
                     <div class="about-image-description">Hospitality</div>
                 </div>
@@ -52,7 +65,7 @@
                 </div>
                 <div class="about-header-div flex-column">
                     <h1>With a spark of creativity and a strong focus on results, MK Socials, your NYC-based digital marketing agency, is tranforming how brands in the Hospitality and Lifestyle indistries connect with their audience.</h1>
-                    <a href="./contact.html">Book a <span class="free-word">free</span> consultation</a>
+                    <a href="./contact.html">Book a <b>FREE</b> consultation</a>
                 </div>
             </div>
         </section>
@@ -195,8 +208,7 @@
         <div id="contact-me-box" class="extra-padding">
             <a href="./contact.html" id="contact-me-link">CONTACT</a>
         </div>
-        <div>Developed by <a href="https://victoriakapelush.com" target="_blank">Victoria Kapelush</a></div>
         <div>© / 2024 </div>
-    </footer>
+    </footer>-->
 </body>
 </html>
