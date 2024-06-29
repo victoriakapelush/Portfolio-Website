@@ -130,14 +130,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("mousemove", function(event) {
     var scrollWord = document.getElementById("scroll-word");
-    scrollWord.style.left = (event.pageX + 20) + "px"; // Adjust 20px offset as needed
-    scrollWord.style.top = (event.pageY + 20) + "px"; // Adjust 20px offset as needed
+    scrollWord.style.left = (event.pageX + 20) + "px"; 
+    scrollWord.style.top = (event.pageY + 20) + "px"; 
 });
 
 document.addEventListener("mousemove", function(event) {
     var scrollWord = document.getElementById("scroll-word");
-    scrollWord.style.left = (event.pageX + 20) + "px"; // Adjust 20px offset as needed
-    scrollWord.style.top = (event.pageY + 20) + "px"; // Adjust 20px offset as needed
+    scrollWord.style.left = (event.pageX + 20) + "px"; 
+    scrollWord.style.top = (event.pageY + 20) + "px"; 
 });
 
 
