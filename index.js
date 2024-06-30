@@ -136,21 +136,16 @@ document.addEventListener("mousemove", function(event) {
 // Show and hide navigation bar (mobile version)
 const navBtn = document.getElementById('nav-btn');
 const dropdownMenu = document.getElementById('dropdown-menu');
-const showMainSection = document.getElementById('show-svg-main-image-container');
 const showScrollCursor = document.getElementById('scroll-word');
+const showMainSection = document.getElementById('show-svg-main-image-container');
+const showAboutSection = document.getElementById('about-me-separate');
 
 navBtn.addEventListener("click", function() {
     if (dropdownMenu.classList.toggle("hideMenu")) {
         dropdownMenu.style.display = "none";
-        showMainSection.style.display = "block";
-        showScrollCursor.style.display = "block";
-
-        
     } else {
         dropdownMenu.classList.remove("hideMenu");
         dropdownMenu.style.display = "block";
-        showMainSection.style.display = "none";
-        showScrollCursor.style.display = "none";
     }
 });
 
@@ -171,3 +166,4 @@ indexLinkDropdown.addEventListener('click', function(event) {
         showScrollCursor.style.display = "none";
     }
 });
+

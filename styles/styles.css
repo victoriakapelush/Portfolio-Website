@@ -1097,13 +1097,24 @@ footer div:nth-of-type(3) a:hover {
     /* ABOUT PAGE */
 
     #about-me-separate {
-        padding-top: 1.5rem;
-        gap: 3rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0 0 0;
+        width: 100vw;
+    }
+
+    #about-me-img-div {
         height: fit-content;
     }
 
+    #about-me-text-div {
+        padding: 0;
+        margin: 0;
+    }
+
     #about-me-text-div h1 {
-        font-size: 3rem;
+        padding: 0;
+        font-size: 2.5rem;
     }
 
     #about-me-text-div p {
