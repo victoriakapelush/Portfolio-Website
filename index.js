@@ -110,9 +110,9 @@ window.addEventListener('scroll', () => {
 
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll(".imageScroll");
-    const initialDelay = 1500; // Initial delay before the first image (1 second)
-    const delayBetweenImages = 500; // Delay between each subsequent image (0.1 second)
-    const cumulativeDelay = initialDelay; // Start cumulative delay with the initial delay
+    const initialDelay = 1500; // Initial delay before the first image (1.5 seconds)
+    const delayBetweenImages = 500; // Delay between each subsequent image (0.5 seconds)
+    let cumulativeDelay = initialDelay; // Start cumulative delay with the initial delay
 
     function revealImages(index) {
         if (index < images.length) {
@@ -124,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function() {
             cumulativeDelay += delayBetweenImages; // Increase cumulative delay for the next image
         }
     }
-
     revealImages(0);
 });
 
@@ -134,15 +133,41 @@ document.addEventListener("mousemove", function(event) {
     scrollWord.style.top = (event.pageY + 20) + "px"; 
 });
 
-document.addEventListener("mousemove", function(event) {
-    var scrollWord = document.getElementById("scroll-word");
-    scrollWord.style.left = (event.pageX + 20) + "px"; 
-    scrollWord.style.top = (event.pageY + 20) + "px"; 
+// Show and hide navigation bar (mobile version)
+const navBtn = document.getElementById('nav-btn');
+const dropdownMenu = document.getElementById('dropdown-menu');
+const showMainSection = document.getElementById('show-svg-main-image-container');
+const showScrollCursor = document.getElementById('scroll-word');
+
+navBtn.addEventListener("click", function() {
+    if (dropdownMenu.classList.toggle("hideMenu")) {
+        dropdownMenu.style.display = "none";
+        showMainSection.style.display = "block";
+        showScrollCursor.style.display = "block";
+
+        
+    } else {
+        dropdownMenu.classList.remove("hideMenu");
+        dropdownMenu.style.display = "block";
+        showMainSection.style.display = "none";
+        showScrollCursor.style.display = "none";
+    }
 });
 
+// Show index page on click "Home" when dropdown menu is shown
+const indexLinkDropdown = document.getElementById('index-link-dropdown');
 
+indexLinkDropdown.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
 
-
-
-
-
+    if (dropdownMenu.classList.toggle("hideMenu")) {
+        dropdownMenu.style.display = "none";
+        showMainSection.style.display = "block";
+        showScrollCursor.style.display = "block";
+    } else {
+        dropdownMenu.classList.remove("hideMenu");
+        dropdownMenu.style.display = "block";
+        showMainSection.style.display = "none";
+        showScrollCursor.style.display = "none";
+    }
+});

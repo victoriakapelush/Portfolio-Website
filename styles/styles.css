@@ -121,6 +121,101 @@ a.current-page {
     text-decoration: underline;
 }
 
+/* INDEX PAGE */
+
+.hidden {
+    position: absolute;
+    display: none;
+}
+
+.visible {
+    opacity: 1;
+    display: block;
+    position: absolute;
+}
+
+#bottom-mark {
+    position: absolute;
+    bottom: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    height: 27rem;
+    width: 27rem;
+    top: 70px;
+    bottom: 0;
+}
+
+.content-wrapper.visible-content {
+    display: flex; 
+    position: absolute;
+    justify-content: center;
+    height: 27rem;
+    width: 27rem;
+    top: 70px;
+    bottom: 0;
+}
+
+#image3 {
+    right: 20px;
+    bottom: 0;
+    opacity: 1; 
+    transform: translateX(-29px) translateY(-19px) rotate(-4deg) scale(0.9);
+}
+
+#image1 {
+    opacity: 1; 
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+}
+
+#image2 {
+    right: 20px;
+    opacity: 1; 
+    transform: translateX(12px) translateY(-20px) rotate(10deg) scale(0.9);
+}
+
+#image4 {
+    right: 20px;
+    opacity: 1;
+    transform: translateX(-1px) translateY(-9px) rotate(11deg) scale(0.9);
+}
+
+#image5 {
+    right: 20px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+}
+
+.imageScroll {
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    top: 30px; 
+}
+
+.center-me {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+
+.bottom-mark {
+    position: absolute;
+    top: 44rem;
+}
+
+#scroll-word {
+    position: fixed;
+    pointer-events: none; 
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    user-select: none; 
+    white-space: nowrap;
+}
+
 /* landing page section one */
 
 section {
@@ -839,9 +934,123 @@ footer div:nth-of-type(3) a:hover {
 
 /* RESPONSIVE STYLES */
 
-@media (max-width: 767px) { 
+@media only screen and (max-width : 600px) {
 
-    /* INDEX PAGE */
+    /* MOBILE HEADER */
+
+    .svg-main-image-container, #scroll-word {
+        display: none;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .menu-icon {
+        width: 48px;
+        height: 48px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        display: flex;
+        margin-right: 1rem;
+    }
+
+    .ham {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 400ms;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .hamRotate.active {
+        transform: rotate(45deg);
+    }
+    
+    .hamRotate180.active {
+        transform: rotate(180deg);
+    }
+    
+    .line {
+        fill:none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke:#000;
+        stroke-width:5.5;
+        stroke-linecap:round;
+    }
+
+    .ham3 .top {
+        stroke-dasharray: 40 130;
+    }
+
+    .ham3 .middle {
+        stroke-dasharray: 40 140;
+    }
+    
+    .ham3 .bottom {
+        stroke-dasharray: 40 205;
+    }
+    
+    .ham3.active .top {
+        stroke-dasharray: 75 130;
+        stroke-dashoffset: -63px;
+    }
+
+    .ham3.active .middle {
+        stroke-dashoffset: -102px;
+    }
+
+    .ham3.active .bottom {
+        stroke-dasharray: 110 205;
+        stroke-dashoffset: -86px;
+    }
+
+    .hidden-nav {
+        margin-top: 5rem;
+    }
+
+    .hidden-nav a {
+        margin: 0 auto;
+        text-decoration: none;
+        color: black;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    .hidden-nav a:hover {
+        text-decoration: underline;
+        color: black;
+    } 
+
+    #header-links-container {
+        display: none;
+    }
+
+    .mobile-design .menu-icon {
+        display: block;
+    }
+
+    .hideMenu {
+        display: block;
+    }
+
+    .content-wrapper {
+        height: 23rem;
+        width: 23rem;
+        margin: 0 auto;
+        right: 30px;
+    }
+
+    /* previuos design */
 
     #about-section {
         display: flex;
@@ -945,99 +1154,7 @@ footer div:nth-of-type(3) a:hover {
 
 
 
-.hidden {
-    position: absolute;
-    display: none;
-}
 
-.visible {
-    opacity: 1;
-    display: block;
-    position: absolute;
-}
-
-#bottom-mark {
-    position: absolute;
-    bottom: 0;
-}
-
-.content-wrapper {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    height: 27rem;
-    width: 27rem;
-    top: 70px;
-    bottom: 0;
-}
-
-.content-wrapper.visible-content {
-    display: flex; 
-    position: absolute;
-    justify-content: center;
-    height: 27rem;
-    width: 27rem;
-    top: 70px;
-    bottom: 0;
-}
-
-#image3 {
-    right: 20px;
-    bottom: 0;
-    opacity: 1; 
-    transform: translateX(-29px) translateY(-19px) rotate(-4deg) scale(0.9);
-}
-
-#image1 {
-    opacity: 1; 
-    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
-}
-
-#image2 {
-    right: 20px;
-    opacity: 1; 
-    transform: translateX(12px) translateY(-20px) rotate(10deg) scale(0.9);
-}
-
-#image4 {
-    right: 20px;
-    opacity: 1;
-    transform: translateX(-1px) translateY(-9px) rotate(11deg) scale(0.9);
-}
-
-#image5 {
-    right: 20px;
-    opacity: 1;
-    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
-}
-
-
-.imageScroll {
-    transition: transform 1s ease-in-out;
-    position: absolute;
-    top: 30px; 
-}
-
-.center-me {
-    position: relative;
-    width: 100%;
-    height: 100%; 
-}
-
-.bottom-mark {
-    position: absolute;
-    top: 44rem;
-}
-
-
-#scroll-word {
-    position: fixed;
-    pointer-events: none; /* Ensure the scroll word doesn't interfere with mouse events */
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    user-select: none; /* Prevent text selection */
-}
 
 
 
