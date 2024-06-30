@@ -637,6 +637,8 @@ section {
 #about-me-text-div h1, #about-me-text-div p {
     margin: 0;
     text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 } 
 
 #about-me-text-div h1 {
@@ -673,7 +675,6 @@ section {
     padding: 4rem 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     align-items: center;
 }
@@ -688,7 +689,7 @@ section {
 }
 
 .portfolio-general-info {
-    height: auto;
+    height: 35rem;
     width: 35rem;
     margin: 0 0 !important;
     font-size: 1rem;
@@ -833,6 +834,7 @@ form {
     text-align: center;
     background-color: var(--grey);
     transition: background-color 0.3s ease;
+    color: black;
 }
 
 #lets-connect-btn:hover {
@@ -934,7 +936,7 @@ footer div:nth-of-type(3) a:hover {
 
 /* RESPONSIVE STYLES */
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 767px) {
 
     /* MOBILE HEADER */
 
@@ -1099,8 +1101,9 @@ footer div:nth-of-type(3) a:hover {
     #about-me-separate {
         flex-wrap: wrap;
         gap: 1rem;
-        padding: 1rem 0 0 0;
+        padding: 1rem 0 3rem 0;
         width: 100vw;
+        height: fit-content;
     }
 
     #about-me-img-div {
@@ -1123,20 +1126,40 @@ footer div:nth-of-type(3) a:hover {
 
     /* PORTFOLIO PAGE */
 
-    .row {
-        gap: 3rem;
-    }
+
 
     #portfolio-section-separate {
-        gap: 3rem;
+        width: 100%;
     }
 
     .portfolio-image {
-        width: 30rem;
-        margin: 0 auto;
+        height: auto;
+        width: 15rem;
+    }
+    
+    .portfolio-general-info {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .portfolio-general-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-general-info p {
+        font-size: .9rem;
+    }
+
+    .wooga {
+        padding-top: 1rem;
     }
 
     /* CONTACT PAGE */
+
+    #contact-form {
+        height: calc(100vh - 80px);
+        padding-top: 3rem;
+    }
 
     form {
         width: 24rem;
@@ -1161,22 +1184,95 @@ footer div:nth-of-type(3) a:hover {
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+    /* index page */
+    #dropdown-menu, #nav-btn {
+        display: none;
+    }
 
+    .content-wrapper {
+        right: 40px;
+        width: 25rem;
+        height: auto;
+    }
 
+    /* about page */
 
+    #about-me-separate {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0 3rem 0;
+        width: 100vw;
+        height: fit-content;
+    }
 
+    #about-me-img-div {
+        height: fit-content;
+    }
 
+    #about-me-text-div {
+        padding: 0;
+        margin: 0;
+    }
 
+    #about-me-text-div h1 {
+        padding: 1rem 0 0 0;
+        font-size: 3rem;
+    }
 
+    #about-me-text-div p {
+        font-size: 1rem;
+    }
 
+    /* portfolio page */
 
+    #portfolio-section-separate {
+        width: 100%;
+        display: flex;
+        align-self: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-image {
+        height: auto;
+        width: 25rem;
+    }
     
+    .portfolio-general-info {
+        height: 25rem;
+        width: 25rem;
+    }
+}
 
+@media only screen and (min-width: 1024px) {
 
+    #dropdown-menu, #nav-btn {
+        display: none;
+    }
 
+    /* about page */
 
+    #about-me-separate {
+        min-width: 40%;
+    }
 
+    .portfolio-image {
+        height: auto;
+        width: 35rem;
+    }
+    
+    .portfolio-general-info {
+        height: 35rem;
+        width: 35rem;
+    }
 
+    #portfolio-section-separate {
+        flex-wrap: nowrap;
+    }
 
-
+}
